@@ -1,8 +1,12 @@
 import os
 import argparse
 
-from utilities.llm import GPT4
-from utilities.Serial_Monitor.monitor import monitor
+import sys
+project_path = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(project_path)
+
+from utils.llm import GPT4
+from utils.Serial_Monitor.monitor import monitor
 
 from settings import port
 from settings import board_fqbn
