@@ -2,11 +2,12 @@ import os
 import argparse
 
 import sys
-project_path = os.path.dirname(os.path.abspath(__file__))
-sys.path.append(project_path)
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(os.path.join(os.path.abspath(__file__), 'utils'))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'utils/Serial_Monitor'))
 
-from utils.llm import GPT4
-from utils.Serial_Monitor.monitor import monitor
+from llm import GPT4
+from Serial_Monitor.monitor import monitor
 
 from settings import port
 from settings import board_fqbn

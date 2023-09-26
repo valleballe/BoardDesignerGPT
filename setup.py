@@ -7,3 +7,6 @@ os.system("git clone https://github.com/PBahner/Serial-Monitor.git utils/Serial_
 init_file = "utils/Serial_Monitor/__init__.py"
 if not os.path.exists(init_file):
     open(init_file, 'a').close()
+
+# Install packages
+os.system("pip install openai pyserial")
