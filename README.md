@@ -22,6 +22,20 @@ port = "/dev/cu.usbserial-110"  # Replace with your Arduino Nano's port (e.g., C
 board_fqbn = "arduino:avr:nano:cpu=atmega328" # Fully Qualified Board Name (FQBN). Replace with whatever board you are using.
 project_directory = "test" # Replace with the name for your project (where you want your code files stored).
 ```
+### Identifying Your Board Configuration
+
+To correctly set your Arduino board, you need to identify the **port** and **Fully Qualified Board Name (FQBN)**.
+
+**Finding the Port:**
+- For **Windows**, open the device manager and locate "Ports (COM & LPT)". Your Arduino board should be listed there (like "USB-SERIAL CH340 (COM3)"). Use the COM value as your port.
+- For **macOS**, open Terminal and type `ls /dev/cu.*`. This returns a list of all devices, find your Arduino device on the list (it usually appears like  "/dev/cu.usbserial-XXXX").
+
+**Identifying the FQBN:**
+- The FQBN consists of the package name (e.g. "arduino"), the architecture (e.g. "avr"), the board ID (e.g. "nano"), and finally the board version (e.g. "cpu=atmega328").
+- You can find your FQBN using the Arduino command line interface (CLI) with the command `arduino-cli board list`.
+- If you're unsure, use the Arduino IDE. Connect your Arduino board, select the correct option in the Tools > Board menu, and use the Tools > Get Board Info command to get the exact FQBN.
+Having identified these, you should update the `port` and `board_fqbn` variables in your settings
+
 
 ## Usage
 You run BoardDesignerGPT with the following command.
