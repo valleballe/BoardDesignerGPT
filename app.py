@@ -7,7 +7,7 @@ sys.path.append(os.path.join(os.path.abspath(__file__), 'utils'))
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'utils/Serial_Monitor'))
 
 from utils.llm import GPT4
-from utils.Serial_Monitor.monitor import monitor
+from utils.serial_monitor import monitor
 
 from settings import port
 from settings import board_fqbn
