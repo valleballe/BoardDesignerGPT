@@ -3,6 +3,7 @@ Generates code and uploads it to board based on specified goal and components.
 
 ## Getting started
 
+### Installing packages
 1. Clone the repository
 ```
 git clone https://github.com/valleballe/BoardDesignerGPT/
@@ -12,7 +13,8 @@ git clone https://github.com/valleballe/BoardDesignerGPT/
 ```
 python setup.py
 ```
-3. Set your project variables and board specifications in the settings. You can get an OpenAI API key [here](https://platform.openai.com/account/api-keys).
+### Setting up your board and API keys
+Set your project variables and board specifications in the settings. You can get an OpenAI API key [here](https://platform.openai.com/account/api-keys).
 ```
 OPENAI_API_KEY = "YOUR_API_KEY"
 
@@ -24,9 +26,9 @@ project_directory = "test" # Replace with the name for your project (where you w
 ## Usage
 You run BoardDesignerGPT with the following command.
 ```
-python app.py --goal "Your goal"
+python app.py --goal "Your goal and connected pins"
 ```
-Beware that you might have to rerun a few times until the code compiles.
+Be aware that you might have to run the script a few times if the code does not compile.
 
 ##  Contribute
 
