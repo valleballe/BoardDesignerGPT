@@ -1,7 +1,8 @@
 # BoardDesignerGPT
 Generates code and uploads it to board based on specified goal and components.
 
-## Installation
+## Getting started
+
 1. Clone the repository
 ```
 git clone https://github.com/valleballe/BoardDesignerGPT/
@@ -20,15 +21,16 @@ board_fqbn = "arduino:avr:nano:cpu=atmega328" # Fully Qualified Board Name (FQBN
 project_directory = "test" # Replace with the name for your project (where you want your code files stored).
 ```
 
-## Running the code
+## Usage
 You run BoardDesignerGPT with the following command.
 ```
 python app.py --goal "Your goal"
 ```
+Beware that you might have to rerun a few times until the code compiles.
 
 ##  Contribute
 
-Depthfusion is under active development and contributors are welcome. If you have any suggestions, feature requests, or bug reports, please open new [issues](https://github.com/valleballe/BoardDesignerGPT/issues) on GitHub. 
+BoardDesignerGPT is under active development and contributors are welcome. If you have any suggestions, feature requests, or bug reports, please open new [issues](https://github.com/valleballe/BoardDesignerGPT/issues) on GitHub. 
 
 
 ## BibTeX Citation
