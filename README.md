@@ -8,8 +8,8 @@ Generates code and uploads it to board based on specified goal and components.
 ```
 git clone https://github.com/valleballe/BoardDesignerGPT/
 ```
-1. Install the Arduino-CLI follow [these intructions](https://arduino.github.io/arduino-cli/0.33/installation/).
-2. Install the required packages by running `setup.py`
+2. Install the Arduino-CLI follow [these intructions](https://arduino.github.io/arduino-cli/0.33/installation/).
+3. Install the required packages by running `setup.py`
 ```
 python setup.py
 ```
