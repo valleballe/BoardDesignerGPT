@@ -1,4 +1,5 @@
 # BoardDesignerGPT
+Generates code and uploads it to board based on specified goal and components.
 
 ## Installation
 1. Clone the repository
