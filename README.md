@@ -38,7 +38,7 @@ Having identified these, you should update the `port` and `board_fqbn` variables
 
 
 ## Usage
-You run BoardDesignerGPT with the following command.
+You run BoardDesignerGPT with the following command in your terminal.
 ```
 python app.py --goal "Your goal and connected pins"
 ```
