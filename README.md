@@ -1,5 +1,5 @@
 # BoardDesignerGPT
-Generates code and uploads it to board based on specified goal and components.
+Generates code using OpenAI's GPT-4 or GPT-3.5 and uploads it to board based on specified goal and components.
 
 ## Getting started
 
