@@ -40,7 +40,7 @@ def compile_and_upload(code: str, board_fqbn: str, port: str, project_directory:
 if __name__ == "__main__":
     
     parser = argparse.ArgumentParser(description="Main script")
-    parser.add_argument('-g','--goal', type=str, default="Goal: I have a water sensor hooked up to D2. Print its output.", help='Prompt to generate image. Leave empty if image is prefered.')
+    parser.add_argument('-g','--goal', type=str, default="Goal: I have a water sensor hooked up to D2. Print its output.", help='The goal that the generated should try to accomplish.')
     args = parser.parse_args()
     
     # Specify goal and components 
@@ -51,6 +51,8 @@ if __name__ == "__main__":
     # Generate C code
     print("Generating code...")
     code_string = code_writer.generate_response(prompt)
+    code_string = code_string.split('```c', 1)[-1] # remove parts before the '```c'
+    code_string = code_string.split('```', 1)[0]   # remove parts after '```'
     print(code_string)
 
 
